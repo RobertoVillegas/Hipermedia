@@ -56,6 +56,9 @@ monogatari.characters({
   y: {
     name: 'Yui',
     color: '#5bcaff',
+    sprites: {
+      normal: 'ProtagonistaGlobo.png',
+    },
   },
 });
 
@@ -88,6 +91,7 @@ monogatari.script({
         Warning: 'You must enter a name!',
       },
     },
+    'show character y normal at middle with fadeInUp',
     'y Hi {{player.name}} Welcome to Monogatari!',
     {
       Choice: {
