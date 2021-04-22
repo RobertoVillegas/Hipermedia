@@ -61,7 +61,7 @@ monogatari.characters({
 
 monogatari.script({
   // The game starts here.
-  Start: [
+  Escena1: [
     'show scene #f7f6f6 with fadeIn',
     'show notification Welcome',
     {
@@ -94,11 +94,11 @@ monogatari.script({
         Dialog: 'y Have you already read some documentation?',
         Yes: {
           Text: 'Yes',
-          Do: 'jump Yes',
+          Do: 'jump Escena2',
         },
         No: {
           Text: 'No',
-          Do: 'jump No',
+          Do: 'jump Escena2',
         },
       },
     },
@@ -108,7 +108,7 @@ monogatari.script({
     'y Thats awesome!',
     'y Then you are ready to go ahead and create an amazing Game!',
     'y I can’t wait to see what story you’ll tell!',
-    'end',
+    'jump Escena2',
   ],
 
   No: [

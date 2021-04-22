@@ -62,7 +62,7 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Escena2: [
-    'show scene #f7f6f6 with fadeIn',
+    'show scene #000000 with fadeIn',
     'show notification Welcome',
     {
       Input: {
