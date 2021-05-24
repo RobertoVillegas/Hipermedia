@@ -45,9 +45,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen='main'] {
-  
 
-  
 }
 
 /* Main Menu Buttons Styling */
@@ -84,6 +82,7 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component='choice-container'] button {
+  color: black;
 }
 
 /* Choice Button Style on Hover */
@@ -133,7 +132,7 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component='quick-menu'] {
-background-color: black;
+background-color: rgba(0, 0, 0, 0);
 
 }
 
