@@ -18,7 +18,11 @@
 **/
 
 /* General Style */
+
 body {
+  background-color: #343746;
+  color: white;
+  font-family: 'Mate SC', serif;
 }
 
 /* Simple Button styles*/
@@ -41,6 +45,9 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen='main'] {
+  
+
+  
 }
 
 /* Main Menu Buttons Styling */
@@ -85,14 +92,26 @@ button:hover {
 
 /* Text Box styling */
 [data-component='text-box'] {
+  width: 45vw;
+  padding-left: 100px;
+  /* padding-right: 1200px; */
+  background-color: rgba(0, 0, 0, 0);
+  /* border: black;
+  border-width: 10px;
+  border-style: double; */
 }
 
 /* Character Name Style */
 [data-ui='who'] {
+  font-weight: bold;
+  font-size: xx-large;
+  
 }
 
 /* Style for Centered Text */
 [data-component='centered-dialog'] {
+  /* font-family: 'Courier New', Courier, monospace; */
+  color: white;
 }
 
 /* Character Images Styles */
@@ -101,6 +120,7 @@ button:hover {
 
 /* Other Images Styles */
 [data-screen='game'] [data-image] {
+  
 }
 
 /**
@@ -113,10 +133,13 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component='quick-menu'] {
+background-color: black;
+
 }
 
 /* Quick Menu Buttons Style */
 [data-component='quick-menu'] span {
+  
 }
 
 /* Quick Menu Buttons Style on Hover */

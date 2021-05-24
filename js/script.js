@@ -22,7 +22,10 @@ monogatari.action('notification').notifications({
 });
 
 // Define the Particles JS Configurations used in the game
-monogatari.action('particles').particles({});
+monogatari.action('particles').particles({
+
+
+});
 
 // Define the canvas objects used in the game
 monogatari.action('canvas').objects({});
@@ -34,7 +37,9 @@ monogatari.configuration('credits', {});
 monogatari.assets('gallery', {});
 
 // Define the music used in the game.
-monogatari.assets('music', {});
+monogatari.assets('music', {
+  'mainTheme': 'alexander-nakarada-medieval-loop-one.mp3'
+});
 
 // Define the voice files used in the game.
 monogatari.assets('voices', {});
@@ -73,7 +78,7 @@ monogatari.characters({
     },
     expressions: {
       angry: 'expressions/normal.png',
-      normal: 'expressions/normal.jpg',
+      normal: 'expressions/normal.png',
 
     },
     default_expression: 'normal'
@@ -112,7 +117,8 @@ monogatari.script({
 
 
   Escena1: [
-    'show scene #000000 with fadeIn',
+    'play music mainTheme with loop with volume 50',
+    'show scene #191A21 with fadeIn',
 
 
     // 'show notification Welcome',
@@ -142,21 +148,45 @@ monogatari.script({
     // },
     // 'show character y normal at center with fadeInUp',
     // ' y Hi {{player.name}} Welcome to Monogatari!',
+
+
     'centered Érase una vez una mujer muy pobre que dio a luz un niño.',
     'centered Como el pequeño vino al mundo envuelto en la tela de la suerte, predijéronle que al cumplir los catorce años se casaría con la hija del Rey.',
     'centered Ocurrió que unos días después el Rey pasó por el pueblo,',
-    'show background back with fadeIn',
+    'show background #343746 with fadeIn',
+    'show image pueblo.png center with fadeIn',
+
+
     'Sin darse a conocer, y al preguntar qué novedades había, le respondieron:',
-    'show character c normal at center with fadeInUp',
+
     'c:normal Uno de estos días ha nacido un niño con una tela de la suerte. A quien esto sucede, la fortuna lo protege.',
     'c:normal También le han pronosticado que a los catorce años se casará con la hija del Rey.',
-    'hide character c with fadeOut',
+
     'El Rey, que era hombre de corazón duro, se irritó al oír aquella profecía,',
     // 'show background #000000 with fadeIn',
     'show character p normal at right with fadeInUp',
     'Y, yendo a encontrar a los padres, les dijo con tono muy amable:',
     'show character r normal at left with fadeInUp',
     'r:normal Vosotros sois muy pobres; dejadme, pues, a vuestro hijo, que yo lo cuidaré.',
+    'Al principio, el matrimonio se negaba,',
+    'pero al ofrecerles el forastero un buen bolso de oro, pensaron:',
+    'Ha nacido con buena estrella; será, pues, por su bien',
+    'y, al fin, aceptaron y le entregaron el niño.',
+    'hide character p with fadeOut',
+    'hide character r with fadeOut',
+    'El Rey lo metió en una cajita y prosiguió con él su camino, hasta que llegó al borde de un profundo río.',
+    'Arrojó al agua la caja, y pensó:',
+    'r:normal Así he librado a mi hija de un pretendiente bien inesperado.',
+    'Pero la caja, en lugar de irse al fondo, se puso a flotar como un barquito, sin que entrara en ella ni una gota de agua.',
+    'Y así continuó, corriente abajo, hasta cosa de dos millas de la capital del reino, donde quedó detenida en la presa de un molino.',
+    'Uno de los mozos, que por fortuna se encontraba presente y la vio, sacó la caja con un gancho, creyendo encontrar en ella algún tesoro.',
+    'Al abrirla ofreciéndose a su vista un hermoso chiquillo, alegre y vivaracho. Llevándolo el mozo al molinero Y su mujer, que, como no tenían hijos, exclamaron:',
+    '¡Es Dios que nos lo envía!',
+    'show background #191A21 with fadeIn',
+    'centered Y cuidaron con todo cariño al niño abandonado, el cual creció en edad, salud y buenas cualidades.',
+    'jump Escena2',
+
+
 
 
     //   {

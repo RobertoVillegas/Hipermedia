@@ -28,10 +28,10 @@ const { $_ready, $_ } = Monogatari;
 // 1. Outside the $_ready function:
 
 
-$_ready (() => {
+$_ready(() => {
 	// 2. Inside the $_ready function:
 
-	monogatari.init ('#monogatari').then (() => {
+	monogatari.init('#monogatari').then(() => {
 		// 3. Inside the init function:
 
 	});
