@@ -62,62 +62,33 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Escena6: [
-    'show scene #f7f6f6 with fadeIn',
-    'show notification Welcome',
-    {
-      Input: {
-        Text: 'What is your name?',
-        Validation: function (input) {
-          return input.trim().length > 0;
-        },
-        Save: function (input) {
-          this.storage({
-            player: {
-              name: input,
-            },
-          });
-          return true;
-        },
-        Revert: function () {
-          this.storage({
-            player: {
-              name: '',
-            },
-          });
-        },
-        Warning: 'You must enter a name!',
-      },
-    },
-    'y Hi {{player.name}} Welcome to Monogatari!',
-    {
-      Choice: {
-        Dialog: 'y Have you already read some documentation?',
-        Yes: {
-          Text: 'Yes',
-          Do: 'jump Yes',
-        },
-        No: {
-          Text: 'No',
-          Do: 'jump No',
-        },
-      },
-    },
-  ],
+    'show scene #191A21 with fadeIn',
 
-  Yes: [
-    'y Thats awesome!',
-    'y Then you are ready to go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
-  ],
+    'centered Marchado que se hubo el diablo, la vieja sacó la hormiga del pliegue de su falda y devolvió al hijo de la suerte su figura humana.',
+    'ama:normal Ahí tienes los tres cabellos de oro y supongo que oirías lo que el diablo respondió a tus tres preguntas.',
+    'pr:normal Sí, lo he oído y no lo olvidaré',
+    'ama:normal Ya tienes, pues, lo que querías, y puedes volverte.',
 
-  No: [
-    'y You can do it now.',
+    'show background #343746 with fadeIn',
+    'centered Dando las gracias a la vieja por su ayuda, salió el muchacho del infierno, muy contento del éxito de su empresa.',
+    'Al llegar al lugar donde estaba el barquero, pidióle éste la prometida respuesta.',
+    'pr:normal Primero pásame y te diré de qué manera puedes librarte.',
+    'Cuando estuvieron en la orilla opuesta, le transmitió el consejo del diablo:',
+    'pr:normal Al primero que venga a pedirte que lo pases, ponle el remo en la mano.',
 
-    'show message Help',
+    'Siguió su camino y llegó a la ciudad del árbol estéril, donde le salió al encuentro el guarda, a quien había prometido una respuesta.',
+    'pr:normal Matad la rata que roe la raíz y volverá a dar manzanas de oro.',
+    'Agradeceselo el guarda y le ofreció, en recompensa, dos asnos cargados de oro.',
 
-    'y Go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
+    'Finalmente, se presentó a las puertas de la otra ciudad, aquella en que se había secado la fuente, y dijo al guarda lo que oyera al diablo:',
+    'pr:normal Hay un sapo bajo una piedra de la fuente. Buscadlo y matadlo y volveréis a tener vino en abundancia.',
+    'centered Dióle las gracias el guarda, y, con ellas, otros dos asnos cargados de oro.',
+
+
+
+    'jump Escena7',
+
+
+
   ],
 });

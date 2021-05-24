@@ -62,62 +62,19 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Escena3: [
-    'show scene #f7f6f6 with fadeIn',
-    'show notification Welcome',
-    {
-      Input: {
-        Text: 'What is your name?',
-        Validation: function (input) {
-          return input.trim().length > 0;
-        },
-        Save: function (input) {
-          this.storage({
-            player: {
-              name: input,
-            },
-          });
-          return true;
-        },
-        Revert: function () {
-          this.storage({
-            player: {
-              name: '',
-            },
-          });
-        },
-        Warning: 'You must enter a name!',
-      },
-    },
-    'y Hi {{player.name}} Welcome to Monogatari!',
-    {
-      Choice: {
-        Dialog: 'y Have you already read some documentation?',
-        Yes: {
-          Text: 'Yes',
-          Do: 'jump Yes',
-        },
-        No: {
-          Text: 'No',
-          Do: 'jump No',
-        },
-      },
-    },
-  ],
+    'show scene #191A21 with fadeIn',
 
-  Yes: [
-    'y Thats awesome!',
-    'y Then you are ready to go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
-  ],
+    'centered Transcurrido algún tiempo, regresó el Rey al palacio y vio que se había cumplido el vaticinio: el niño de la suerte se había casado con su hija.',
+    'r:normal ¿Cómo pudo ser eso?. En mi carta daba yo una orden muy distinta.',
+    'Entonces la Reina le presentó el escrito, para que leyera él mismo lo que allí decía. Leyó el Rey la carta y se dio cuenta de que había sido cambiada por otra.',
+    'Preguntó entonces al joven qué había sucedido con el mensaje que le confiara, y por qué lo había sustituido por otro.',
+    'pr:normal No sé nada. Debieron cambiármela durante la noche, mientras dormía en la casa del bosque.',
+    'r:angry Esto no puede quedar así.',
+    'r:normal Quien quiera conseguir a mi hija debe ir antes al infierno y traerme tres pelos de oro de la cabeza del diablo. Si lo haces, conservarás a mi hija.',
+    'Esperaba el Rey librarse de él para siempre con aquel encargo; pero el afortunado muchacho respondió:',
+    'pr:normal Traeré los tres cabellos de oro. El diablo no me da miedo.',
+    'centered Se despidió de su esposa y emprendió su peregrinación.',
+    'jump Escena4',
 
-  No: [
-    'y You can do it now.',
-
-    'show message Help',
-
-    'y Go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
   ],
 });

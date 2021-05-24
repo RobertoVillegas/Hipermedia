@@ -62,62 +62,22 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Escena7: [
-    'show scene #f7f6f6 with fadeIn',
-    'show notification Welcome',
-    {
-      Input: {
-        Text: 'What is your name?',
-        Validation: function (input) {
-          return input.trim().length > 0;
-        },
-        Save: function (input) {
-          this.storage({
-            player: {
-              name: input,
-            },
-          });
-          return true;
-        },
-        Revert: function () {
-          this.storage({
-            player: {
-              name: '',
-            },
-          });
-        },
-        Warning: 'You must enter a name!',
-      },
-    },
-    'y Hi {{player.name}} Welcome to Monogatari!',
-    {
-      Choice: {
-        Dialog: 'y Have you already read some documentation?',
-        Yes: {
-          Text: 'Yes',
-          Do: 'jump Yes',
-        },
-        No: {
-          Text: 'No',
-          Do: 'jump No',
-        },
-      },
-    },
-  ],
+    'show scene #191A21 with fadeIn',
+    'centered Al cabo, el afortunado mozo estuvo de regreso a palacio, junto a su esposa, que sintió una gran alegría al verlo de nuevo, y a la que contó sus aventuras.',
+    'Entregó al Rey los tres cabellos de oro del diablo, y al reparar el monarca en los cuatro asnos con sus cargas de oro, díjole, muy contento:',
+    'r:normal Ya que has cumplido todas las condiciones, puedes quedarte con mi hija.',
+    'r:normal Y Pero, querido yerno, dime de dónde has sacado tanto oro. ¡Es un tesoro inmenso!',
+    'pr:normal He cruzado un río y lo he cogido de la orilla opuesta, donde hay oro en vez de arena.',
+    'r:normal ¿Y no podría yo ir a buscar un poco?',
+    'pr:normal Todo el que queráis',
+    'pr:normal En el río hay un barquero que os pasará, y en la otra margen podréis llenar los sacos.',
+    'El avaro rey se puso en camino sin perder tiempo, y al llegar al río hizo seña al barquero de que lo pasara.',
+    'El barquero le hizo montar en la barca, y, antes de llegar a la orilla opuesta. poniéndole en la mano la pértiga, saltó a tierra.',
+    'centered Desde aquel día, el Rey tiene que estar bogando; es el castigo por sus pecados.',
+    'centered Nadie ha ido a quitarle la pértiga de la mano',
 
-  Yes: [
-    'y Thats awesome!',
-    'y Then you are ready to go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
-  ],
+    'jump Escena8',
 
-  No: [
-    'y You can do it now.',
 
-    'show message Help',
-
-    'y Go ahead and create an amazing Game!',
-    'y I can’t wait to see what story you’ll tell!',
-    'end',
   ],
 });

@@ -185,7 +185,7 @@ monogatari.characters({
   },
   m: {
     name: 'Molineros',
-    color: '#9FBD6E',
+    color: '#EE9E64',
     directory: 'adoptivos',
     sprites: {
       normal: 'adoptivos.png',
@@ -215,7 +215,7 @@ monogatari.characters({
 
   pr: {
     name: 'Muchacho',
-    color: '#70DBF7',
+    color: '#4E98AB',
     directory: 'protagonista',
     sprites: {
       normal: 'protagonista.png',
@@ -244,7 +244,7 @@ monogatari.script({
 
     'show background #343746 with fadeIn',
 
-    'show image 2molino.png center with fadeIn',
+    'show image 2molinosolo.png center with fadeIn',
 
     'm:normal No, es un niño expósito; hace catorce años que lo encontramos en una caja, en la presa del molino.',
 
@@ -252,11 +252,14 @@ monogatari.script({
 
     'r:normal Buena gente, ¿dejaríais que el chico llevara una carta mía a la Señora Reina? Le daré en pago dos monedas de oro.',
     'm:normal ¡Como mande el Señor Rey!',
+    'show image 2molino.png center with fadeIn',
     'stop sound lluvia with fade 12',
 
     'El Rey escribió entonces una carta a la Reina, en los siguientes términos:',
     'r:normal En cuanto se presente el muchacho con esta carta, lo mandarás matar y enterrar, y esta orden debe cumplirse antes de mi regreso.',
 
+    'hide image 2molino.png with fadeOut',
+    'hide image 2molinosolo.png with fadeOut',
     'Púsose el muchacho en camino con la carta, pero se extravió, y al anochecer llegó a un gran bosque.',
     'Vio una lucecita en la oscuridad y se dirigió allí, resultando ser una casita muy pequeña.',
 
@@ -277,9 +280,16 @@ monogatari.script({
     'A poco llegaron los bandidos y preguntaron, enfurecidos, quién era el forastero que allí dormía.',
 
     'a:normal  ¡Ay!, es un chiquillo inocente que se extravió en el bosque; lo he acogido por compasión. Parece que lleva una carta para la Reina.',
-    '',
-    '',
-    '',
-    '',
+    'Los bandoleros abrieron el sobre y leyeron el contenido de la carta, es decir, la orden de que se diera muerte al mozo en cuanto llegara.',
+    'A pesar de su endurecido corazón, los ladrones se apiadaron, y el capitán rompió la carta y la cambió por otra',
+    'en la que ordenaba que al llegar el muchacho lo casasen con la hija del Rey.',
+    'Dejándolo luego descansar tranquilamente en su banco hasta la mañana, y, cuando se despertó, le dieron la carta y le mostraron el camino.',
+    'La Reina, al recibir y leer la misiva, se apresuró a cumplir lo que en ella se le mandaba: Organizó una boda magnífica,',
+    'Y la princesa fue unida en matrimonio al favorito de la fortuna. Y como el muchacho era guapo y apuesto,',
+
+    'show background #191A21 with fadeIn',
+
+    'centered su esposa vivía feliz y satisfecha con él.',
+    'jump Escena3',
   ],
 });

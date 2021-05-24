@@ -137,15 +137,14 @@ monogatari.script({
   Escena1: [
     'play music mainTheme with loop with volume 50',
     'show scene #191A21 with fadeIn',
-    'show particles fireSparks',
-
+    //'jump Escena4',
 
 
     'centered Érase una vez una mujer muy pobre que dio a luz un niño.',
     'centered Como el pequeño vino al mundo envuelto en la tela de la suerte, predijéronle que al cumplir los catorce años se casaría con la hija del Rey.',
     'centered Ocurrió que unos días después el Rey pasó por el pueblo,',
     'show background #343746 with fadeIn',
-    'show image 1padres.png center with fadeIn',
+    'show image 1pueblo.png center with fadeIn',
 
 
     'Sin darse a conocer, y al preguntar qué novedades había, le respondieron:',
@@ -155,7 +154,7 @@ monogatari.script({
 
     'El Rey, que era hombre de corazón duro, se irritó al oír aquella profecía,',
     // 'show background #000000 with fadeIn',
-
+    'show image 1padres.png center with fadeIn',
     'Y, yendo a encontrar a los padres, les dijo con tono muy amable:',
 
     'r:normal Vosotros sois muy pobres; dejadme, pues, a vuestro hijo, que yo lo cuidaré.',
@@ -173,6 +172,7 @@ monogatari.script({
     'Y así continuó, corriente abajo, hasta cosa de dos millas de la capital del reino, donde quedó detenida en la presa de un molino.',
 
     'hide image 1padres.png with fadeOut',
+    'hide image 1pueblo.png with fadeOut',
     'show image 1bebecaja.png center with fadeIn',
 
     'Uno de los mozos, que por fortuna se encontraba presente y la vio, sacó la caja con un gancho, creyendo encontrar en ella algún tesoro.',
