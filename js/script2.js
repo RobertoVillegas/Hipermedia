@@ -177,7 +177,7 @@ monogatari.characters({
       normal: 'rey.png',
     },
     expressions: {
-      angry: 'expressions/normal.png',
+      angry: 'expressions/angry.png',
       normal: 'expressions/normal.png',
 
     },
@@ -200,7 +200,7 @@ monogatari.characters({
 
   a: {
     name: 'Anciana',
-    color: '#9FBD6E',
+    color: '#FFA6A6',
     directory: 'anciana',
     sprites: {
       normal: 'anciana.png',
@@ -262,6 +262,8 @@ monogatari.script({
     'hide image 2molinosolo.png with fadeOut',
     'Púsose el muchacho en camino con la carta, pero se extravió, y al anochecer llegó a un gran bosque.',
     'Vio una lucecita en la oscuridad y se dirigió allí, resultando ser una casita muy pequeña.',
+    'show image 2GuaridaBandidos.png with fadeIn',
+    'show image 2GuaridaP1.png with fadeIn',
 
     'play sound fogata',
     'Al entrar sólo había una anciana sentada junto al fuego, la cual se asustó al ver al mozo y le dijo:',
@@ -277,6 +279,10 @@ monogatari.script({
 
 
     'Y, tendiéndose sobre un banco, se quedó dormido en el acto.',
+    'hide image 2GuaridaP1.png with fadeOut',
+    'show image 2GuaridaP2.png with fadeIn',
+
+
     'A poco llegaron los bandidos y preguntaron, enfurecidos, quién era el forastero que allí dormía.',
 
     'a:normal  ¡Ay!, es un chiquillo inocente que se extravió en el bosque; lo he acogido por compasión. Parece que lleva una carta para la Reina.',
@@ -287,6 +293,7 @@ monogatari.script({
     'La Reina, al recibir y leer la misiva, se apresuró a cumplir lo que en ella se le mandaba: Organizó una boda magnífica,',
     'Y la princesa fue unida en matrimonio al favorito de la fortuna. Y como el muchacho era guapo y apuesto,',
 
+    'hide image 2GuaridaP2.png with fadeOut',
     'show background #191A21 with fadeIn',
 
     'centered su esposa vivía feliz y satisfecha con él.',

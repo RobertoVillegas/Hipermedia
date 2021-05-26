@@ -137,6 +137,8 @@ monogatari.script({
   Escena1: [
     'play music mainTheme with loop with volume 50',
     'show scene #191A21 with fadeIn',
+
+    // 'jump Escena3',
     //'jump Escena4',
 
 
@@ -159,6 +161,7 @@ monogatari.script({
 
     'r:normal Vosotros sois muy pobres; dejadme, pues, a vuestro hijo, que yo lo cuidaré.',
     'Al principio, el matrimonio se negaba,',
+    'show image 1padresoro.png with fadeIn',
     'pero al ofrecerles el forastero un buen bolso de oro, pensaron:',
     'p:normal Ha nacido con buena estrella; será, pues, por su bien',
     'y, al fin, aceptaron y le entregaron el niño.',
@@ -171,6 +174,7 @@ monogatari.script({
     'Pero la caja, en lugar de irse al fondo, se puso a flotar como un barquito, sin que entrara en ella ni una gota de agua.',
     'Y así continuó, corriente abajo, hasta cosa de dos millas de la capital del reino, donde quedó detenida en la presa de un molino.',
 
+    'hide image 1padresoro.png with fadeOut',
     'hide image 1padres.png with fadeOut',
     'hide image 1pueblo.png with fadeOut',
     'show image 1bebecaja.png center with fadeIn',

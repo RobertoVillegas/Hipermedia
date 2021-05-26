@@ -65,7 +65,7 @@ monogatari.script({
     'show scene #191A21 with fadeIn',
 
     'centered Transcurrido algún tiempo, regresó el Rey al palacio y vio que se había cumplido el vaticinio: el niño de la suerte se había casado con su hija.',
-    'r:normal ¿Cómo pudo ser eso?. En mi carta daba yo una orden muy distinta.',
+    'r:angry ¿Cómo pudo ser eso?. En mi carta daba yo una orden muy distinta.',
     'Entonces la Reina le presentó el escrito, para que leyera él mismo lo que allí decía. Leyó el Rey la carta y se dio cuenta de que había sido cambiada por otra.',
     'Preguntó entonces al joven qué había sucedido con el mensaje que le confiara, y por qué lo había sustituido por otro.',
     'pr:normal No sé nada. Debieron cambiármela durante la noche, mientras dormía en la casa del bosque.',
