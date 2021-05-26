@@ -294,6 +294,7 @@ monogatari.script({
     'Y la princesa fue unida en matrimonio al favorito de la fortuna. Y como el muchacho era guapo y apuesto,',
 
     'hide image 2GuaridaP2.png with fadeOut',
+    'hide image 2GuaridaBandidos.png with fadeOut',
     'show background #191A21 with fadeIn',
 
     'centered su esposa vivía feliz y satisfecha con él.',
