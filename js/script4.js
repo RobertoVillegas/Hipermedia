@@ -100,7 +100,7 @@ monogatari.characters({
 
   ama: {
     name: 'Ama de Llaves',
-    color: '#4E98AB',
+    color: '#B0521E',
     directory: 'ama',
     sprites: {
       normal: 'ama.png',

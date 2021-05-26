@@ -55,7 +55,7 @@ monogatari.assets('scenes', {});
 monogatari.characters({
   dia: {
     name: 'Diablo',
-    color: '#4E98AB',
+    color: '#FF7676',
     directory: 'diablo',
     sprites: {
       normal: 'diablo.png',
@@ -98,7 +98,7 @@ monogatari.script({
     'ama:normal ¿A qué se deberá esto?',
     'dia:normal ¡Ah, si lo supiesen!.',
     'dia:normal En la raíz vive una rata que lo roe; si la matasen, el árbol volvería a dar manzanas de oro;',
-    'dia:normal pero si no la matan, el árbol se secará del todo.Mas déjame tranquilo con tus sueños; si vuelves a molestarme te daré un sopapo.',
+    'dia:normal pero si no la matan, el árbol se secará del todo. Mas déjame tranquilo con tus sueños; si vuelves a molestarme te daré un sopapo.',
     'ama:normal La mujer lo tranquilizó y siguió despiojándolo, hasta que lo vio otra vez dormido y lo oyó roncar.Cogiéndole el tercer cabello, se lo arrancó de un tirón.',
     'El diablo se levantó de un salto, vociferando y dispuesto a arrearle a la vieja; pero ésta logró apaciguarlo por tercera vez, diciéndole:',
     'ama:normal ¿Y qué puedo hacerle, si tengo pesadillas?',

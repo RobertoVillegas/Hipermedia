@@ -76,12 +76,20 @@ monogatari.script({
     'Cuando estuvieron en la orilla opuesta, le transmitió el consejo del diablo:',
     'pr:normal Al primero que venga a pedirte que lo pases, ponle el remo en la mano.',
 
+    'show image 4ArbolManzan1.png with fadeIn',
     'Siguió su camino y llegó a la ciudad del árbol estéril, donde le salió al encuentro el guarda, a quien había prometido una respuesta.',
+    'show image ArbolManzan2.png with fadeIn',
     'pr:normal Matad la rata que roe la raíz y volverá a dar manzanas de oro.',
     'Agradeceselo el guarda y le ofreció, en recompensa, dos asnos cargados de oro.',
+    'hide image 4ArbolManzan1.png with fadeOut',
+    'hide image ArbolManzan2.png with fadeOut',
 
+    'show image 4FuenteVino1.png with fadeIn',
     'Finalmente, se presentó a las puertas de la otra ciudad, aquella en que se había secado la fuente, y dijo al guarda lo que oyera al diablo:',
+    'show image FuenteVino2.png with fadeIn',
     'pr:normal Hay un sapo bajo una piedra de la fuente. Buscadlo y matadlo y volveréis a tener vino en abundancia.',
+    'hide image FuenteVino2.png with fadeOut',
+    'hide image 4FuenteVino1.png with fadeOut',
     'centered Dióle las gracias el guarda, y, con ellas, otros dos asnos cargados de oro.',
 
 
