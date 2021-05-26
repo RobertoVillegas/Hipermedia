@@ -161,7 +161,7 @@ monogatari.script({
 
     'r:normal Vosotros sois muy pobres; dejadme, pues, a vuestro hijo, que yo lo cuidaré.',
     'Al principio, el matrimonio se negaba,',
-    'show image 1padresoro.png with fadeIn',
+    //'show image 1padresoro.png with fadeIn',
     'pero al ofrecerles el forastero un buen bolso de oro, pensaron:',
     'p:normal Ha nacido con buena estrella; será, pues, por su bien',
     'y, al fin, aceptaron y le entregaron el niño.',
