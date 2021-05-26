@@ -138,7 +138,7 @@ monogatari.script({
     'play music mainTheme with loop with volume 50',
     'show scene #191A21 with fadeIn',
 
-    'jump Escena2',
+    //'jump Escena2',
     //'jump Escena4',
 
 
