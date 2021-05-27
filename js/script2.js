@@ -240,7 +240,7 @@ monogatari.script({
     'play sound lluvia with loop',
     'play sound trueno with volume 50',
     'centered He aquí que un día el Rey, sorprendido por una tempestad, entró a guarecerse en el molino y preguntó a los molineros si aquel guapo muchacho era hijo suyo.',
-    'hide particles rain',
+
 
     'show background #343746 with fadeIn',
 
@@ -253,9 +253,12 @@ monogatari.script({
     'r:normal Buena gente, ¿dejaríais que el chico llevara una carta mía a la Señora Reina? Le daré en pago dos monedas de oro.',
     'm:normal ¡Como mande el Señor Rey!',
     'show image 2molino.png center with fadeIn',
+
     'stop sound lluvia with fade 12',
 
     'El Rey escribió entonces una carta a la Reina, en los siguientes términos:',
+    'show background #343746 with fadeIn',
+    'hide particles rain',
     'r:normal En cuanto se presente el muchacho con esta carta, lo mandarás matar y enterrar, y esta orden debe cumplirse antes de mi regreso.',
 
     'hide image 2molino.png with fadeOut',
@@ -288,13 +291,18 @@ monogatari.script({
     'a:normal  ¡Ay!, es un chiquillo inocente que se extravió en el bosque; lo he acogido por compasión. Parece que lleva una carta para la Reina.',
     'Los bandoleros abrieron el sobre y leyeron el contenido de la carta, es decir, la orden de que se diera muerte al mozo en cuanto llegara.',
     'A pesar de su endurecido corazón, los ladrones se apiadaron, y el capitán rompió la carta y la cambió por otra',
-    'en la que ordenaba que al llegar el muchacho lo casasen con la hija del Rey.',
-    'Dejándolo luego descansar tranquilamente en su banco hasta la mañana, y, cuando se despertó, le dieron la carta y le mostraron el camino.',
-    'La Reina, al recibir y leer la misiva, se apresuró a cumplir lo que en ella se le mandaba: Organizó una boda magnífica,',
-    'Y la princesa fue unida en matrimonio al favorito de la fortuna. Y como el muchacho era guapo y apuesto,',
-
     'hide image 2GuaridaP2.png with fadeOut',
     'hide image 2GuaridaBandidos.png with fadeOut',
+
+    'show image 2Carta.png with fadeIn',
+    'en la que ordenaba que al llegar el muchacho lo casasen con la hija del Rey.',
+    'Dejándolo luego descansar tranquilamente en su banco hasta la mañana, y, cuando se despertó, le dieron la carta y le mostraron el camino.',
+    'hide image 2Carta.png with fadeOut',
+    'show image 2anillosBoda.png',
+    'La Reina, al recibir y leer la misiva, se apresuró a cumplir lo que en ella se le mandaba: Organizó una boda magnífica,',
+    'Y la princesa fue unida en matrimonio al favorito de la fortuna. Y como el muchacho era guapo y apuesto,',
+    'hide image 2anillosBoda.png with fadeOut',
+
     'show background #191A21 with fadeIn',
 
     'centered su esposa vivía feliz y satisfecha con él.',

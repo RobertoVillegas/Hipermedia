@@ -28,7 +28,9 @@ monogatari.action('particles').particles({});
 monogatari.action('canvas').objects({});
 
 // Credits of the people involved in the creation of this awesome game
-monogatari.configuration('credits', {});
+monogatari.configuration('credits', {
+
+});
 
 // Define the images that will be available on your game's image gallery
 monogatari.assets('gallery', {});

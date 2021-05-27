@@ -63,7 +63,7 @@ monogatari.script({
   // The game starts here.
   Escena6: [
     'show scene #191A21 with fadeIn',
-
+    'hide particles fireSparks',
     'centered Marchado que se hubo el diablo, la vieja sacó la hormiga del pliegue de su falda y devolvió al hijo de la suerte su figura humana.',
     'ama:normal Ahí tienes los tres cabellos de oro y supongo que oirías lo que el diablo respondió a tus tres preguntas.',
     'pr:normal Sí, lo he oído y no lo olvidaré',

@@ -22,7 +22,231 @@ monogatari.action('notification').notifications({
 });
 
 // Define the Particles JS Configurations used in the game
-monogatari.action('particles').particles({});
+monogatari.action('particles').particles({
+  'stars': {
+    'particles': {
+      'number': {
+        'value': 355,
+        'density': {
+          'enable': true,
+          'value_area': 789.1476416322727
+        }
+      },
+      'color': {
+        'value': '#ffffff'
+      },
+      'shape': {
+        'type': 'circle',
+        'stroke': {
+          'width': 0,
+          'color': '#000000'
+        },
+        'polygon': {
+          'nb_sides': 5
+        },
+        'image': {
+          'src': '',
+          'width': 100,
+          'height': 100
+        }
+      },
+      'opacity': {
+        'value': 0.48927153781200905,
+        'random': false,
+        'anim': {
+          'enable': true,
+          'speed': 0.2,
+          'opacity_min': 0,
+          'sync': false
+        }
+      },
+      'size': {
+        'value': 2,
+        'random': true,
+        'anim': {
+          'enable': true,
+          'speed': 2,
+          'size_min': 0,
+          'sync': false
+        }
+      },
+      'line_linked': {
+        'enable': false,
+        'distance': 150,
+        'color': '#ffffff',
+        'opacity': 0.4,
+        'width': 1
+      },
+      'move': {
+        'enable': true,
+        'speed': 0.2,
+        'direction': 'none',
+        'random': true,
+        'straight': false,
+        'out_mode': 'out',
+        'bounce': false,
+        'attract': {
+          'enable': false,
+          'rotateX': 600,
+          'rotateY': 1200
+        }
+      }
+    },
+    'interactivity': {
+      'detect_on': 'canvas',
+      'events': {
+        'onhover': {
+          'enable': true,
+          'mode': 'bubble'
+        },
+        'onclick': {
+          'enable': true,
+          'mode': 'push'
+        },
+        'resize': true
+      },
+      'modes': {
+        'grab': {
+          'distance': 400,
+          'line_linked': {
+            'opacity': 1
+          }
+        },
+        'bubble': {
+          'distance': 83.91608391608392,
+          'size': 1,
+          'duration': 3,
+          'opacity': 1,
+          'speed': 3
+        },
+        'repulse': {
+          'distance': 200,
+          'duration': 0.4
+        },
+        'push': {
+          'particles_nb': 4
+        },
+        'remove': {
+          'particles_nb': 2
+        }
+      }
+    },
+    'retina_detect': true
+  },
+
+  'fireSparks': {
+    'particles': {
+      'number': {
+        'value': 400,
+        'density': {
+          'enable': true,
+          'value_area': 3000
+        }
+      },
+      'color': {
+        'value': '#fc0000'
+      },
+      'shape': {
+        'type': 'circle',
+        'stroke': {
+          'width': 0,
+          'color': '#000000'
+        },
+        'polygon': {
+          'nb_sides': 3
+        },
+        'image': {
+          'src': 'img/github.svg',
+          'width': 100,
+          'height': 100
+        }
+      },
+      'opacity': {
+        'value': 0.5,
+        'random': true,
+        'anim': {
+          'enable': false,
+          'speed': 1,
+          'opacity_min': 0.1,
+          'sync': false
+        }
+      },
+      'size': {
+        'value': 2,
+        'random': true,
+        'anim': {
+          'enable': true,
+          'speed': 5,
+          'size_min': 0,
+          'sync': false
+        }
+      },
+      'line_linked': {
+        'enable': false,
+        'distance': 500,
+        'color': '#ffffff',
+        'opacity': 0.4,
+        'width': 2
+      },
+      'move': {
+        'enable': true,
+        'speed': 7.8914764163227265,
+        'direction': 'top',
+        'random': true,
+        'straight': false,
+        'out_mode': 'out',
+        'bounce': false,
+        'attract': {
+          'enable': false,
+          'rotateX': 600,
+          'rotateY': 1200
+        }
+      }
+    },
+    'interactivity': {
+      'detect_on': 'canvas',
+      'events': {
+        'onhover': {
+          'enable': false,
+          'mode': 'bubble'
+        },
+        'onclick': {
+          'enable': false,
+          'mode': 'repulse'
+        },
+        'resize': true
+      },
+      'modes': {
+        'grab': {
+          'distance': 400,
+          'line_linked': {
+            'opacity': 0.5
+          }
+        },
+        'bubble': {
+          'distance': 400,
+          'size': 4,
+          'duration': 0.3,
+          'opacity': 1,
+          'speed': 3
+        },
+        'repulse': {
+          'distance': 200,
+          'duration': 0.4
+        },
+        'push': {
+          'particles_nb': 4
+        },
+        'remove': {
+          'particles_nb': 2
+        }
+      }
+    },
+    'retina_detect': true
+  }
+
+
+});
 
 // Define the canvas objects used in the game
 monogatari.action('canvas').objects({});
@@ -137,15 +361,21 @@ monogatari.script({
 
     'hide image 4ArbolManzan1.png with fadeOut',
 
+    'show particles stars',
+    'show image 4Barquero.png fadeIn',
     'Prosiguiendo su ruta, llegó a la orilla de un ancho y profundo río que había de cruzar. Preguntóle el barquero qué oficio tenía y cuáles eran sus conocimientos.',
     'pr:normal Lo sé todo',
     'bar:normal Siendo así, puedes hacerme un favor',
     'bar:normal Dime por qué tengo que estar bogando eternamente de una a otra orilla, sin que nadie venga a relevarme.',
     'pr:normal Lo sabrás pero te lo diré cuando vuelva.',
+    'hide image 4Barquero.png with fadeOut',
+    'hide particles stars',
 
     'show background #57001a with fadeIn',
 
     'centered Cuando hubo cruzado el río, encontró la entrada del infierno.',
+    'show particles fireSparks',
+    'show image .png',
     'Todo estaba lleno de hollín; el diablo había salido, pero su ama se hallaba sentada en un ancho sillón.',
     'ama:normal ¿Qué quieres?',
     'pr:normal Quisiera tres cabellos de oro de la cabeza del diablo, pues sin ellos no podré conservar a mi esposa.',

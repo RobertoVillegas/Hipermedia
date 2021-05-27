@@ -28,7 +28,24 @@ monogatari.action('particles').particles({});
 monogatari.action('canvas').objects({});
 
 // Credits of the people involved in the creation of this awesome game
-monogatari.configuration('credits', {});
+monogatari.configuration('credits', {
+
+  "Artistas": {
+    "Personajes": "Christopher Miranda",
+    "Escenarios": "Sheila Ávalos",
+    "Props": "Natanael López",
+  },
+  "Desarrolladores": {
+    " ": [
+      "Lourdes Lerma", "Cruz Reyes", "Roberto Villegas",],
+
+  },
+  "Audio": {
+    "Música": ["Pablo García",],
+    "SFX": ["Abraham Pequeño",],
+  }
+
+});
 
 // Define the images that will be available on your game's image gallery
 monogatari.assets('gallery', {});
@@ -76,7 +93,7 @@ monogatari.script({
     'centered Desde aquel día, el Rey tiene que estar bogando; es el castigo por sus pecados.',
     'centered Nadie ha ido a quitarle la pértiga de la mano',
 
-    'jump Escena8',
+    // 'jump Escena8',
 
 
   ],

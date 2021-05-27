@@ -138,7 +138,7 @@ monogatari.script({
     'play music mainTheme with loop with volume 50',
     'show scene #191A21 with fadeIn',
 
-    'jump Escena5',
+    'jump Escena7',
     //'jump Escena4',
 
 
@@ -187,6 +187,7 @@ monogatari.script({
     'stop sound riverFlow with fade 12',
     'm:normal ¡Es Dios que nos lo envía!',
     'hide image 1bebecaja.png with fadeOut',
+    'hide image 3Castillo with fadeOut',
     'show background #191A21 with fadeIn',
     'centered Y cuidaron con todo cariño al niño abandonado, el cual creció en edad, salud y buenas cualidades.',
     'jump Escena2',
